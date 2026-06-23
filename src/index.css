@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --color-royal-gold: #fbbf24; /* Material Amber-400 */
+  --color-gold-light: #fef08a; /* Material Yellow-200 */
+  --color-emerald-950: #022c22;
+  --color-emerald-900: #064e3b;
+  --color-emerald-850: #023a2b;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+  }
+  .bg-emerald-radial {
+    background: radial-gradient(circle at center, #022c22 0%, #011f15 70%, #00120b 100%);
+  }
+}
+
+
